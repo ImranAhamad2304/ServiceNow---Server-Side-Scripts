@@ -1,0 +1,5 @@
+var gr = new GlideRecord('incident'); 
+gr.addQuery('priority','1'); 
+gr.query(); 
+gr.urgency ='1'; 
+gr.update(); 
