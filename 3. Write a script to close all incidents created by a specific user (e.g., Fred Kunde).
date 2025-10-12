@@ -1,0 +1,10 @@
+var gr = new GlideRecord('incident'); 
+gr.addQuery('caller_id', ''); 
+gr.query(); 
+while (gr.next()) { 
+    gr.caller_id = 'Fred Kunde'; 
+    gr.close_code = 'Test 12.10.2025'; 
+    gr.close_notes = 'Test 12.10.2025'; 
+    gr.state = '7'; 
+    gr.update(); 
+} 
