@@ -1,0 +1,7 @@
+var gr = new GlideRecord('incident'); 
+gr.addQuery('assignment_group','9d0ba048c3976210b601564ed4013163'); 
+gr.query(); 
+while(gr.next()) { 
+    gr.assignment_group = '004b6808c3976210b601564ed4013190'; 
+    gr.update(); 
+} 
