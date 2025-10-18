@@ -1,0 +1,6 @@
+var gr = new GlideRecord('change_request');
+gr.addEncodedQuery('type=normal^sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()');
+gr.query();
+while (gr.next()) {
+    gs.print(gr.number);
+}
