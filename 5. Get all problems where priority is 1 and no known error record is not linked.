@@ -1,0 +1,6 @@
+var gr = new GlideRecord('problem'); 
+gr.addEncodedQuery('priority=1^known_errorISNOTEMPTY'); 
+gr.query(); 
+while (gr.next()) { 
+    gs.print(gr.number); 
+} 
