@@ -1,0 +1,8 @@
+var gr = new GlideRecord('sys_user');
+gr.addEncodedQuery('last_login<javascript:gs.beginningOfLast90Days()');
+gr.query();
+while (gr.next()) {
+    gs.print(gr.getDisplayValue());
+    gr.active = false;
+    gr.update();
+}
