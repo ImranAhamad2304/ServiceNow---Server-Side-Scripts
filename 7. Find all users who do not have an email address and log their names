@@ -1,0 +1,6 @@
+var gr = new GlideRecord('sys_user'); 
+gr.addEncodedQuery('emailISEMPTY'); 
+gr.query(); 
+while (gr.next()) { 
+    gs.print(gr.getDisplayValue()); 
+} 
