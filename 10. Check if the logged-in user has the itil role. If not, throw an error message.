@@ -1,0 +1,4 @@
+gs.print(gs.hasRole('itil'));
+if (!gs.hasRole('itil')) {
+    gs.addInfoMessage('You Do Not have Access');
+}
