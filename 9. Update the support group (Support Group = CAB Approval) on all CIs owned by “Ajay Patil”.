@@ -1,0 +1,8 @@
+var gr = new GlideRecord('cmdb_ci'); 
+gr.addEncodedQuery('owned_by=fead5f5cc3d7e210b601564ed40131ff'); 
+gr.query(); 
+while (gr.next()) { 
+gr.support_group = 'b85d44954a3623120004689b2d5dd60a'; 
+gr.update(); 
+gs.print(gr.name); 
+} 
