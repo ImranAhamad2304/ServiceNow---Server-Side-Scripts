@@ -1,0 +1,6 @@
+var gr = new GlideRecord('change_request'); 
+gr.addEncodedQuery('state=-2^work_start>=javascript:gs.beginningOfTomorrow()'); 
+gr.query(); 
+while (gr.next()){ 
+    gs.print(gr.number); 
+} 
