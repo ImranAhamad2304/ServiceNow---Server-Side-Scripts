@@ -1,0 +1,10 @@
+Table : Incident
+UI Type : All
+Type : OnLoad
+
+function onLoad() {
+    //Type appropriate comment here, and begin script below
+    if (!(g_user.hasRoleFromList('admin','approver_user'))) {
+        g_form.setSectionDisplay('assignment', false);
+    }
+}
