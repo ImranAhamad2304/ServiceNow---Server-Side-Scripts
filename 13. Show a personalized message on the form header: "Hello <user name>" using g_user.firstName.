@@ -1,0 +1,9 @@
+Table : Incident
+UI Type : All
+Type : OnLoad
+
+function onLoad() {
+    //Type appropriate comment here, and begin script below
+    var firstname = g_user.firstName;
+        g_form.addInfoMessage('Hello'+' '+ firstname);
+}
