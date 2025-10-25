@@ -1,0 +1,8 @@
+function onCondition() { 
+if (! (g_user.hasRoleExactly('managerial_role'))); 
+
+} 
+
+UI Policy Related List Actions: 
+
+Approvers: Visibility - false 
